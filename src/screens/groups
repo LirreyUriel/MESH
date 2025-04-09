@@ -1,0 +1,465 @@
+import React from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, } from "react-native";
+export default (props) => {
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<View 
+						style={{
+							backgroundColor: "#FFFFFF",
+							paddingBottom: 15,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/hj7okbga_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 72,
+								height: 40,
+								marginBottom: 16,
+							}}
+						/>
+						<View 
+							style={{
+								flexDirection: "row",
+								justifyContent: "space-between",
+								alignItems: "center",
+								marginHorizontal: 20,
+							}}>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 18,
+									width: 100,
+								}}>
+								{"Your Groups"}
+							</Text>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/3wx3pozo_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 24,
+									height: 24,
+								}}
+							/>
+						</View>
+					</View>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/4ui2fsx2_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							position: "absolute",
+							top: 0,
+							right: 0,
+							width: 96,
+							height: 40,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+						marginBottom: 64,
+					}}>
+					<View 
+						style={{
+							flexDirection: "row",
+							justifyContent: "space-between",
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 20,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View >
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+									width: 76,
+								}}>
+								{"Team Alpha"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									width: 102,
+								}}>
+								{"Last active: 2h ago"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/pc8vse5b_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 76,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							justifyContent: "space-between",
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 20,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View >
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+									width: 63,
+								}}>
+								{"Book Club"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									width: 103,
+								}}>
+								{"Last active: 1d ago"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/12aih9se_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 76,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 20,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								alignItems: "center",
+								marginRight: 12,
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+									width: 109,
+								}}>
+								{"Adventure Group"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									width: 103,
+								}}>
+								{"Last active: 3d ago"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/3q1hvh9k_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 76,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							justifyContent: "space-between",
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 20,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								alignItems: "center",
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+									width: 100,
+								}}>
+								{"Board Members"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									width: 102,
+								}}>
+								{"Last active: 5h ago"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/we1y00es_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 76,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginHorizontal: 20,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								marginRight: 12,
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+								}}>
+								{"Gamers United"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									width: 110,
+								}}>
+								{"Last active: 12h ago"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/eclplnxl_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 76,
+							}}
+						/>
+					</View>
+				</View>
+				<View 
+					style={{
+						flexDirection: "row",
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 12,
+						paddingHorizontal: 10,
+						shadowColor: "#171A1F0D",
+						shadowOpacity: 0.1,
+						shadowOffset: {
+						    width: 0,
+						    height: 0
+						},
+						shadowRadius: 1,
+						elevation: 1,
+					}}>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 32,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/sjzzwndn_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 2,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 10,
+								fontWeight: "bold",
+								width: 26,
+							}}>
+							{"Home"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 17,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/73xetqaj_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 17,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 55,
+							}}>
+							{"Your Groups"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 17,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/vi3rjowq_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 17,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 56,
+							}}>
+							{"Notifications"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 27,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/6q0j2sxg_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 7,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 36,
+							}}>
+							{"Settings"}
+						</Text>
+					</View>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
