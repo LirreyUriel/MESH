@@ -1,0 +1,596 @@
+import React, {useState} from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, TouchableOpacity, TextInput, } from "react-native";
+export default (props) => {
+	const [textInput1, onChangeTextInput1] = useState('');
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/f9hxrsdm_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							width: 72,
+							height: 40,
+						}}
+					/>
+					<View 
+						style={{
+							alignItems: "flex-end",
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/wu887f2f_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 96,
+								height: 40,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							height: 40,
+							backgroundColor: "#FFFFFF",
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+					</View>
+				</View>
+				<View >
+					<View 
+						style={{
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							paddingVertical: 18,
+						}}>
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								marginBottom: 10,
+								marginHorizontal: 19,
+							}}>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 20,
+									marginRight: 96,
+								}}>
+								{"Your Groups"}
+							</Text>
+							<View 
+								style={{
+									flex: 1,
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 5,
+								}}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										marginHorizontal: 11,
+										width: 129,
+									}}>
+									{"View All of your Groups"}
+								</Text>
+							</View>
+						</View>
+						<View 
+							style={{
+								alignItems: "flex-start",
+								backgroundColor: "#FFFFFF",
+								borderRadius: 2,
+								paddingVertical: 11,
+								marginLeft: 20,
+								shadowColor: "#171A1F0D",
+								shadowOpacity: 0.1,
+								shadowOffset: {
+								    width: 0,
+								    height: 0
+								},
+								shadowRadius: 1,
+								elevation: 1,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/q6zp9ptz_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									borderRadius: 2,
+									width: 201,
+									height: 132,
+									marginBottom: 6,
+									marginHorizontal: 11,
+								}}
+							/>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									fontWeight: "bold",
+									marginBottom: 6,
+									marginLeft: 11,
+									width: 94,
+								}}>
+								{"Trail Explorers"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 26,
+									marginLeft: 11,
+									width: 126,
+								}}>
+								{"Next hike: Green Valley"}
+							</Text>
+							<TouchableOpacity 
+								style={{
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 5,
+									paddingHorizontal: 72,
+									marginHorizontal: 12,
+								}} onPress={()=>alert('Pressed!')}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										width: 54,
+									}}>
+									{"Join Event"}
+								</Text>
+							</TouchableOpacity>
+						</View>
+					</View>
+					<View 
+						style={{
+							position: "absolute",
+							bottom: 20,
+							right: -96,
+							width: 225,
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/gihlolk4_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 132,
+								marginTop: 11,
+								marginBottom: 6,
+								marginHorizontal: 11,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#171A1F",
+								fontSize: 14,
+								fontWeight: "bold",
+								marginBottom: 6,
+								marginLeft: 11,
+								width: 78,
+							}}>
+							{"Game Night"}
+						</Text>
+						<Text 
+							style={{
+								color: "#9095A0",
+								fontSize: 12,
+								marginBottom: 6,
+								marginLeft: 11,
+								width: 115,
+							}}>
+							{"Next event: Catan showdown"}
+						</Text>
+						<TextInput
+							placeholder={"RSVP Now"}
+							value={textInput1}
+							onChangeText={onChangeTextInput1}
+							style={{
+								color: "#927AF4",
+								fontSize: 12,
+								marginBottom: 12,
+								marginHorizontal: 12,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 2,
+								borderWidth: 1,
+								paddingVertical: 5,
+								paddingLeft: 69,
+								paddingRight: 138,
+							}}
+						/>
+					</View>
+				</View>
+				<View 
+					style={{
+						alignItems: "center",
+						backgroundColor: "#FFFFFF",
+						padding: 20,
+					}}>
+					<TouchableOpacity 
+						style={{
+							flexDirection: "row",
+							justifyContent: "center",
+							alignItems: "center",
+							backgroundColor: "#927AF4",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 11,
+							marginBottom: 15,
+						}} onPress={()=>alert('Pressed!')}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/8vd0vjck_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 18,
+								height: 15,
+								marginVertical: 4,
+								marginLeft: 2,
+								marginRight: 9,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 18,
+								width: 161,
+							}}>
+							{"Plan a New Meetup"}
+						</Text>
+					</TouchableOpacity>
+					<Text 
+						style={{
+							color: "#6E7787",
+							fontSize: 14,
+							textAlign: "center",
+							width: 261,
+						}}>
+						{"Sync calendars, find a place, grab a deal."}
+					</Text>
+				</View>
+				<View 
+					style={{
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 19,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 20,
+							marginBottom: 12,
+							marginLeft: 19,
+						}}>
+						{"Smart Suggestions"}
+					</Text>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							marginBottom: 11,
+							marginHorizontal: 19,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/e6kg8xnn_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 32,
+								height: 32,
+								marginRight: 58,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								marginRight: 37,
+								flex: 1,
+							}}>
+							{"Meet Nelson at the game."}
+						</Text>
+						<TouchableOpacity 
+							style={{
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 5,
+								paddingHorizontal: 17,
+							}} onPress={()=>alert('Pressed!')}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 12,
+									width: 22,
+								}}>
+								{"5:30"}
+							</Text>
+						</TouchableOpacity>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							marginBottom: 11,
+							marginHorizontal: 19,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/htx8lu12_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 32,
+								height: 32,
+								marginRight: 58,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								marginRight: 85,
+								flex: 1,
+							}}>
+							{"Lunch with Steve?"}
+						</Text>
+						<TouchableOpacity 
+							style={{
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 5,
+								paddingHorizontal: 13,
+							}} onPress={()=>alert('Pressed!')}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 12,
+									width: 29,
+								}}>
+								{"12:30"}
+							</Text>
+						</TouchableOpacity>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							marginBottom: 19,
+							marginHorizontal: 19,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/47r1tw6k_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 32,
+								height: 32,
+								marginRight: 58,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								marginRight: 25,
+								flex: 1,
+							}}>
+							{"Meet up with Jen and Chris."}
+						</Text>
+						<TouchableOpacity 
+							style={{
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 5,
+								paddingHorizontal: 17,
+							}} onPress={()=>alert('Pressed!')}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 12,
+									width: 22,
+								}}>
+								{"1:00"}
+							</Text>
+						</TouchableOpacity>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							marginBottom: 1,
+							marginLeft: 19,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/9u960dqm_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 32,
+								height: 32,
+								marginTop: 23,
+								marginRight: 58,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								width: 239,
+							}}>
+							{"Planning an outing with friends? Your group might be..."}
+						</Text>
+					</View>
+					<Text 
+						style={{
+							color: "#927AF4",
+							fontSize: 14,
+							marginHorizontal: 109,
+						}}>
+						{"When and where?"}
+					</Text>
+				</View>
+				<View 
+					style={{
+						flexDirection: "row",
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 12,
+						paddingHorizontal: 10,
+						shadowColor: "#171A1F0D",
+						shadowOpacity: 0.1,
+						shadowOffset: {
+						    width: 0,
+						    height: 0
+						},
+						shadowRadius: 1,
+						elevation: 1,
+					}}>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 5,
+							paddingHorizontal: 31,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/z52fckww_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 2,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 10,
+								fontWeight: "bold",
+								width: 26,
+							}}>
+							{"Home"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 5,
+							paddingHorizontal: 29,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/nn28fzvm_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 5,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 32,
+							}}>
+							{"Groups"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 5,
+							paddingHorizontal: 28,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/3lc7sp8r_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 5,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 33,
+							}}>
+							{"Explore"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 5,
+							paddingHorizontal: 31,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/bgkxvolo_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 3,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 27,
+							}}>
+							{"Profile"}
+						</Text>
+					</View>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
