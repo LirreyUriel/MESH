@@ -1,0 +1,532 @@
+import React, {useState} from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, TextInput, TouchableOpacity, } from "react-native";
+export default (props) => {
+	const [textInput1, onChangeTextInput1] = useState('');
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<View 
+						style={{
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							paddingBottom: 12,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/mmgqv5lg_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 72,
+								height: 40,
+								marginBottom: 11,
+							}}
+						/>
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								paddingVertical: 4,
+								marginHorizontal: 20,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/ra21a1zq_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 20,
+									height: 20,
+									marginRight: 75,
+								}}
+							/>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 18,
+									width: 152,
+								}}>
+								{"Set Up Your Profile"}
+							</Text>
+						</View>
+					</View>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/bhw3jgk1_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							position: "absolute",
+							top: 0,
+							right: 0,
+							width: 96,
+							height: 40,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							borderColor: "#BCC1CA",
+							borderRadius: 2,
+							borderWidth: 1,
+							paddingVertical: 9,
+							paddingHorizontal: 16,
+							marginBottom: 17,
+							marginHorizontal: 20,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/ufdoq2ey_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 20,
+								height: 20,
+								marginRight: 8,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#BCC1CA",
+								fontSize: 16,
+								width: 42,
+							}}>
+							{"Name"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							borderColor: "#BCC1CA",
+							borderRadius: 2,
+							borderWidth: 1,
+							paddingVertical: 9,
+							paddingHorizontal: 16,
+							marginHorizontal: 20,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/qt0t5m9y_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 20,
+								height: 20,
+								marginRight: 8,
+							}}
+						/>
+						<TextInput
+							placeholder={"Email Address"}
+							value={textInput1}
+							onChangeText={onChangeTextInput1}
+							style={{
+								color: "#BCC1CA",
+								fontSize: 16,
+								width: 103,
+							}}
+						/>
+					</View>
+				</View>
+				<View 
+					style={{
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingTop: 20,
+						paddingBottom: 48,
+						marginBottom: 13,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 20,
+							marginBottom: 12,
+							marginLeft: 20,
+						}}>
+						{"Dietary Preferences"}
+					</Text>
+					<Text 
+						style={{
+							color: "#565E6C",
+							fontSize: 14,
+							marginBottom: 11,
+							marginHorizontal: 20,
+						}}>
+						{"Let us know what you eat (or don't eat). We will send you requests that work for your diet."}
+					</Text>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "flex-start",
+							marginBottom: 12,
+							marginHorizontal: 24,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+								marginRight: 20,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 29,
+									width: 40,
+								}}>
+								{"Vegan"}
+							</Text>
+						</View>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+								marginRight: 21,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 15,
+									width: 69,
+								}}>
+								{"Vegetarian"}
+							</Text>
+						</View>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 12,
+									width: 74,
+								}}>
+								{"Gluten-Free"}
+							</Text>
+						</View>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "flex-start",
+							marginBottom: 20,
+							marginHorizontal: 24,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+								marginRight: 20,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 15,
+									width: 66,
+								}}>
+								{"Dairy-Free"}
+							</Text>
+						</View>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+								marginRight: 21,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 36,
+									width: 27,
+								}}>
+								{"Keto"}
+							</Text>
+						</View>
+						<View 
+							style={{
+								flex: 1,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+								paddingVertical: 7,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginHorizontal: 22,
+									width: 55,
+								}}>
+								{"Nut-Free"}
+							</Text>
+						</View>
+					</View>
+					<View 
+						style={{
+							alignItems: "flex-start",
+						}}>
+						<View 
+							style={{
+								backgroundColor: "#FFFFFF",
+								paddingVertical: 21,
+								paddingLeft: 20,
+								paddingRight: 195,
+							}}>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 14,
+									width: 125,
+								}}>
+								{"Sync with Calendar"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/9xreda8c_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								position: "absolute",
+								bottom: 19,
+								right: -29,
+								width: 40,
+								height: 24,
+							}}
+						/>
+					</View>
+				</View>
+				<Text 
+					style={{
+						color: "#000000",
+						fontSize: 14,
+						marginBottom: 16,
+						marginLeft: 24,
+					}}>
+					{"When do you usually work?"}
+				</Text>
+				<View >
+					<View 
+						style={{
+							alignItems: "flex-end",
+						}}>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 14,
+								fontWeight: "bold",
+								marginRight: 9,
+								width: 124,
+							}}>
+							{"Sunday - Thursday"}
+						</Text>
+					</View>
+					<View >
+						<View 
+							style={{
+								alignItems: "flex-start",
+								backgroundColor: "#FFFFFF",
+								paddingBottom: 14,
+							}}>
+							<View 
+								style={{
+									marginBottom: 10,
+									marginLeft: 20,
+								}}>
+								<Text 
+									style={{
+										color: "#000000",
+										fontSize: 20,
+									}}>
+									{"Time Preferences"}
+								</Text>
+								<Text 
+									style={{
+										color: "#000000",
+										fontSize: 14,
+										marginHorizontal: 4,
+									}}>
+									{"When do you usually sleep?"}
+								</Text>
+							</View>
+							<View 
+								style={{
+									flexDirection: "row",
+									alignItems: "center",
+									marginLeft: 23,
+								}}>
+								<TouchableOpacity 
+									style={{
+										backgroundColor: "#FFFFFF",
+										borderColor: "#927AF4",
+										borderRadius: 3,
+										borderWidth: 1,
+										paddingVertical: 7,
+										paddingHorizontal: 31,
+										marginRight: 11,
+									}} onPress={()=>alert('Pressed!')}>
+									<Text 
+										style={{
+											color: "#927AF4",
+											fontSize: 14,
+											width: 35,
+										}}>
+										{"23:00"}
+									</Text>
+								</TouchableOpacity>
+								<Text 
+									style={{
+										color: "#000000",
+										fontSize: 14,
+										marginRight: 11,
+									}}>
+									{"-"}
+								</Text>
+								<TouchableOpacity 
+									style={{
+										backgroundColor: "#FFFFFF",
+										borderColor: "#927AF4",
+										borderRadius: 3,
+										borderWidth: 1,
+										paddingVertical: 7,
+										paddingHorizontal: 36,
+									}} onPress={()=>alert('Pressed!')}>
+									<Text 
+										style={{
+											color: "#927AF4",
+											fontSize: 14,
+											width: 26,
+										}}>
+										{"7:00"}
+									</Text>
+								</TouchableOpacity>
+							</View>
+						</View>
+						<View 
+							style={{
+								position: "absolute",
+								top: -28,
+								left: 20,
+								width: 100,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginTop: 7,
+									marginBottom: 6,
+									marginHorizontal: 36,
+									width: 26,
+								}}>
+								{"9:00"}
+							</Text>
+						</View>
+						<View 
+							style={{
+								position: "absolute",
+								top: -28,
+								right: 146,
+								left: 146,
+								backgroundColor: "#FFFFFF",
+								borderColor: "#927AF4",
+								borderRadius: 3,
+								borderWidth: 1,
+							}}>
+							<Text 
+								style={{
+									color: "#927AF4",
+									fontSize: 14,
+									marginTop: 7,
+									marginBottom: 6,
+									marginHorizontal: 32,
+									width: 34,
+								}}>
+								{"17:00"}
+							</Text>
+						</View>
+					</View>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingTop: 39,
+						paddingBottom: 17,
+					}}>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#927AF4",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 9,
+							marginHorizontal: 20,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 16,
+								width: 35,
+							}}>
+							{"Save"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
