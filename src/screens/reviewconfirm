@@ -1,0 +1,486 @@
+import React, {useState} from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, TouchableOpacity, TextInput, } from "react-native";
+export default (props) => {
+	const [textInput1, onChangeTextInput1] = useState('');
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<View 
+						style={{
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							paddingBottom: 12,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								alignItems: "flex-end",
+								marginBottom: 11,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/aa4d6psa_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 96,
+									height: 40,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								paddingVertical: 4,
+								marginHorizontal: 19,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/j7y6ye2t_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 20,
+									height: 20,
+									marginRight: 79,
+								}}
+							/>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 18,
+									width: 144,
+								}}>
+								{"Review & Confirm"}
+							</Text>
+						</View>
+					</View>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/cnapg8k6_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							position: "absolute",
+							top: 0,
+							left: 0,
+							width: 72,
+							height: 40,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 15,
+							marginBottom: 16,
+							marginLeft: 19,
+							width: 86,
+						}}>
+						{"Group Name"}
+					</Text>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							marginBottom: 16,
+							marginLeft: 19,
+						}}>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								marginRight: 117,
+								width: 118,
+							}}>
+							{"Coffee Lovers Club"}
+						</Text>
+						<View 
+							style={{
+								alignItems: "center",
+								marginRight: 4,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/dni92dg2_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 32,
+									height: 32,
+									marginBottom: 12,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/95fbqrwy_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 32,
+									height: 32,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								alignItems: "center",
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/c0bdfy2u_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 32,
+									height: 32,
+									marginBottom: 12,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/6dbwgu64_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 32,
+									height: 32,
+								}}
+							/>
+						</View>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							marginBottom: 16,
+							marginLeft: 19,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/i45yhhs1_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								width: 20,
+								height: 20,
+								marginRight: 104,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#000000",
+								fontSize: 14,
+								width: 208,
+							}}>
+							{"Sat, Sep 30, 11:00 AM - 1:00 PM"}
+						</Text>
+					</View>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 15,
+							marginBottom: 4,
+							marginLeft: 19,
+							width: 113,
+						}}>
+						{"Chosen Location"}
+					</Text>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/cggwansh_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							width: 335,
+							height: 188,
+							marginBottom: 16,
+							marginLeft: 19,
+						}}
+					/>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 15,
+							marginBottom: 4,
+							marginLeft: 19,
+							width: 59,
+						}}>
+						{"Deal Info"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 15,
+							marginLeft: 19,
+							width: 302,
+						}}>
+						{"Get 4 Dine-in Ice Cream Cones when you buy 4"}
+					</Text>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#FFFFFF",
+							borderColor: "#927AF4",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 7,
+							marginHorizontal: 19,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 14,
+								width: 75,
+							}}>
+							{"Edit Meetup"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<TextInput
+						placeholder={"Any other details we should know?"}
+						value={textInput1}
+						onChangeText={onChangeTextInput1}
+						style={{
+							color: "#BCC1CA",
+							fontSize: 18,
+							marginHorizontal: 19,
+							borderColor: "#BCC1CA",
+							borderRadius: 2,
+							borderWidth: 1,
+							paddingVertical: 12,
+							paddingLeft: 20,
+							paddingRight: 40,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#927AF4",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 12,
+							marginHorizontal: 19,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 18,
+								width: 247,
+							}}>
+							{"Create Meetup & Notify Group"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+				<View 
+					style={{
+						flexDirection: "row",
+						justifyContent: "space-between",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+						paddingHorizontal: 63,
+					}}>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/wxxnw9fs_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							width: 20,
+							height: 20,
+						}}
+					/>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/yiugxqtt_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							width: 20,
+							height: 20,
+						}}
+					/>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/twlfxv7r_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							width: 20,
+							height: 20,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						alignItems: "center",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+						paddingHorizontal: 81,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 20,
+							marginBottom: 10,
+						}}>
+						{"Your meetup is planned!"}
+					</Text>
+					<Text 
+						style={{
+							color: "#927AF4",
+							fontSize: 14,
+							textAlign: "center",
+							width: 105,
+						}}>
+						{"Add to Calendar"}
+					</Text>
+				</View>
+				<View 
+					style={{
+						flexDirection: "row",
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 12,
+						paddingHorizontal: 9,
+						shadowColor: "#171A1F0D",
+						shadowOpacity: 0.1,
+						shadowOffset: {
+						    width: 0,
+						    height: 0
+						},
+						shadowRadius: 1,
+						elevation: 1,
+					}}>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 32,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/ov90kr2b_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 2,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 10,
+								fontWeight: "bold",
+								width: 26,
+							}}>
+							{"Home"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 26,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/jvbhepvt_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 8,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 38,
+							}}>
+							{"Meetups"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 23,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/35abxgi1_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 11,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 44,
+							}}>
+							{"Messages"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 31,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/x7zgpvsf_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 3,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 27,
+							}}>
+							{"Profile"}
+						</Text>
+					</View>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
