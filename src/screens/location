@@ -1,0 +1,641 @@
+import React, {useState} from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, TextInput, TouchableOpacity, } from "react-native";
+export default (props) => {
+	const [textInput1, onChangeTextInput1] = useState('');
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<View 
+						style={{
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							paddingBottom: 12,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								alignItems: "flex-end",
+								marginBottom: 16,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/w3lceo4s_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 96,
+									height: 40,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								flexDirection: "row",
+								justifyContent: "space-between",
+								alignItems: "center",
+								marginBottom: 15,
+								marginHorizontal: 19,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/m0l7revl_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 20,
+									height: 20,
+								}}
+							/>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 18,
+									width: 150,
+								}}>
+								{"Choose a Location"}
+							</Text>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/emwjiimx_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 24,
+									height: 24,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								backgroundColor: "#F3F4F6",
+								borderColor: "#00000000",
+								borderRadius: 2,
+								borderWidth: 1,
+								paddingVertical: 9,
+								paddingHorizontal: 16,
+								marginBottom: 13,
+								marginHorizontal: 19,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/zzcbh7fh_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									borderRadius: 2,
+									width: 20,
+									height: 20,
+									marginRight: 8,
+								}}
+							/>
+							<TextInput
+								placeholder={"Search locations..."}
+								value={textInput1}
+								onChangeText={onChangeTextInput1}
+								style={{
+									color: "#BCC1CA",
+									fontSize: 16,
+									width: 130,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								marginLeft: 19,
+							}}>
+							<View 
+								style={{
+									alignItems: "center",
+									borderRadius: 2,
+									paddingTop: 15,
+									marginRight: 68,
+								}}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 14,
+										fontWeight: "bold",
+										marginBottom: 10,
+										width: 29,
+									}}>
+									{"Bars"}
+								</Text>
+								<View 
+									style={{
+										width: 165,
+										height: 4,
+										backgroundColor: "#927AF4",
+										borderRadius: 2,
+									}}>
+								</View>
+							</View>
+							<Text 
+								style={{
+									color: "#565E6C",
+									fontSize: 14,
+									width: 76,
+								}}>
+								{"Restaurants"}
+							</Text>
+						</View>
+					</View>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/64efjnbh_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							position: "absolute",
+							top: 0,
+							left: 0,
+							width: 72,
+							height: 40,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 19,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								alignItems: "flex-start",
+								marginRight: 12,
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+								}}>
+								{"Green Haven"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 6,
+									width: 117,
+								}}>
+								{"Luxury hotel with spa"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 5,
+								}}>
+								{"2.5 miles away"}
+							</Text>
+							<TouchableOpacity 
+								style={{
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 6,
+									paddingHorizontal: 8,
+								}} onPress={()=>alert('Pressed!')}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										width: 64,
+									}}>
+									{"View Offers"}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View 
+							style={{
+								height: 112,
+								flex: 1,
+								backgroundColor: "#D9D9D9",
+								borderRadius: 2,
+							}}>
+						</View>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							justifyContent: "space-between",
+							alignItems: "center",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 19,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								alignItems: "flex-start",
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+									width: 76,
+								}}>
+								{"Sunset Cafe"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 6,
+									width: 101,
+								}}>
+								{"Casual dining spot"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 5,
+									width: 81,
+								}}>
+								{"1.2 miles away"}
+							</Text>
+							<TouchableOpacity 
+								style={{
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 6,
+									paddingHorizontal: 8,
+								}} onPress={()=>alert('Pressed!')}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										width: 61,
+									}}>
+									{"View Menu"}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View 
+							style={{
+								width: 112,
+								height: 112,
+								backgroundColor: "#D9D9D9",
+								borderRadius: 2,
+							}}>
+						</View>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginBottom: 16,
+							marginHorizontal: 19,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								alignItems: "flex-start",
+								marginRight: 12,
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+								}}>
+								{"City Museum"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 6,
+									width: 115,
+								}}>
+								{"Art & history exhibits"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 5,
+								}}>
+								{"3.8 miles away"}
+							</Text>
+							<TouchableOpacity 
+								style={{
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 6,
+									paddingHorizontal: 8,
+								}} onPress={()=>alert('Pressed!')}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										width: 86,
+									}}>
+									{"Explore Exhibits"}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<View 
+							style={{
+								height: 112,
+								flex: 1,
+								backgroundColor: "#D9D9D9",
+								borderRadius: 2,
+							}}>
+						</View>
+					</View>
+					<View 
+						style={{
+							flexDirection: "row",
+							alignItems: "center",
+							backgroundColor: "#FFFFFF",
+							borderRadius: 2,
+							padding: 12,
+							marginHorizontal: 19,
+							shadowColor: "#171A1F0D",
+							shadowOpacity: 0.1,
+							shadowOffset: {
+							    width: 0,
+							    height: 0
+							},
+							shadowRadius: 1,
+							elevation: 1,
+						}}>
+						<View 
+							style={{
+								flex: 1,
+								alignItems: "flex-start",
+								marginRight: 12,
+							}}>
+							<Text 
+								style={{
+									color: "#171A1F",
+									fontSize: 14,
+									marginBottom: 6,
+								}}>
+								{"Urban Fitness"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 6,
+									width: 109,
+								}}>
+								{"Gym & yoga classes"}
+							</Text>
+							<Text 
+								style={{
+									color: "#9095A0",
+									fontSize: 12,
+									marginBottom: 5,
+								}}>
+								{"0.8 miles away"}
+							</Text>
+							<TouchableOpacity 
+								style={{
+									backgroundColor: "#FFFFFF",
+									borderColor: "#927AF4",
+									borderRadius: 2,
+									borderWidth: 1,
+									paddingVertical: 6,
+									paddingHorizontal: 8,
+								}} onPress={()=>alert('Pressed!')}>
+								<Text 
+									style={{
+										color: "#927AF4",
+										fontSize: 12,
+										width: 49,
+									}}>
+									{"Join Now"}
+								</Text>
+							</TouchableOpacity>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/29zjyvhu_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								width: 112,
+								height: 112,
+							}}
+						/>
+					</View>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#171A1F",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 9,
+							marginHorizontal: 19,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 16,
+								width: 96,
+							}}>
+							{"View on Map"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+				<View 
+					style={{
+						flexDirection: "row",
+						alignItems: "flex-start",
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 12,
+						paddingHorizontal: 9,
+						shadowColor: "#171A1F0D",
+						shadowOpacity: 0.1,
+						shadowOffset: {
+						    width: 0,
+						    height: 0
+						},
+						shadowRadius: 1,
+						elevation: 1,
+					}}>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 32,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/gock7dho_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 2,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#927AF4",
+								fontSize: 10,
+								fontWeight: "bold",
+								width: 26,
+							}}>
+							{"Home"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 23,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/p91st85e_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 11,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 43,
+							}}>
+							{"Locations"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 33,
+							marginRight: 1,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/p6babuwn_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 1,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 24,
+							}}>
+							{"Deals"}
+						</Text>
+					</View>
+					<View 
+						style={{
+							flex: 1,
+							alignItems: "center",
+							borderRadius: 2,
+							paddingVertical: 6,
+							paddingHorizontal: 31,
+						}}>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/on885l35_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								borderRadius: 2,
+								height: 24,
+								marginHorizontal: 3,
+							}}
+						/>
+						<Text 
+							style={{
+								color: "#565E6C",
+								fontSize: 10,
+								width: 27,
+							}}>
+							{"Profile"}
+						</Text>
+					</View>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
