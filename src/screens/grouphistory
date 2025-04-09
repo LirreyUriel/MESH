@@ -1,0 +1,391 @@
+import React from "react";
+import { SafeAreaView, View, ScrollView, Image, Text, TouchableOpacity, } from "react-native";
+export default (props) => {
+	return (
+		<SafeAreaView 
+			style={{
+				flex: 1,
+				backgroundColor: "#FFFFFF",
+			}}>
+			<ScrollView  
+				style={{
+					flex: 1,
+					backgroundColor: "#FFFFFF",
+					shadowColor: "#120F281C",
+					shadowOpacity: 0.1,
+					shadowOffset: {
+					    width: 0,
+					    height: 3
+					},
+					shadowRadius: 6,
+					elevation: 6,
+				}}>
+				<View >
+					<View >
+						<View 
+							style={{
+								flexDirection: "row",
+								alignItems: "center",
+								backgroundColor: "#FFFFFF",
+								paddingTop: 55,
+								paddingBottom: 17,
+								paddingHorizontal: 20,
+								shadowColor: "#171A1F0D",
+								shadowOpacity: 0.1,
+								shadowOffset: {
+								    width: 0,
+								    height: 0
+								},
+								shadowRadius: 1,
+								elevation: 1,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/k4p7t1tu_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 20,
+									height: 20,
+									marginRight: 93,
+								}}
+							/>
+							<Text 
+								style={{
+									color: "#000000",
+									fontSize: 18,
+									width: 118,
+								}}>
+								{"Foodie Friends"}
+							</Text>
+						</View>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/3knd7sie_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								position: "absolute",
+								top: 0,
+								left: 0,
+								width: 72,
+								height: 40,
+							}}
+						/>
+						<Image
+							source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/8ojubs5m_expires_30_days.png"}} 
+							resizeMode = {"stretch"}
+							style={{
+								position: "absolute",
+								top: 0,
+								right: 0,
+								width: 96,
+								height: 40,
+							}}
+						/>
+					</View>
+					<View 
+						style={{
+							alignItems: "flex-start",
+							backgroundColor: "#FFFFFF",
+							paddingVertical: 20,
+						}}>
+						<View 
+							style={{
+								flexDirection: "row",
+								justifyContent: "space-between",
+								marginBottom: 4,
+								marginHorizontal: 44,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/ncloxq1k_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 60,
+									height: 60,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/u62talgv_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 60,
+									height: 60,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/j2m2sakz_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 60,
+									height: 60,
+								}}
+							/>
+						</View>
+						<View 
+							style={{
+								flexDirection: "row",
+								marginLeft: 34,
+							}}>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/n9t7fwpy_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 36,
+									height: 16,
+									marginRight: 85,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/ft9ft7js_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 36,
+									height: 16,
+									marginRight: 84,
+								}}
+							/>
+							<Image
+								source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/l9z3olcf_expires_30_days.png"}} 
+								resizeMode = {"stretch"}
+								style={{
+									width: 36,
+									height: 16,
+								}}
+							/>
+						</View>
+					</View>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						padding: 20,
+					}}>
+					<Text 
+						style={{
+							color: "#6E7787",
+							fontSize: 20,
+							marginBottom: 12,
+							width: 167,
+						}}>
+						{"15th March, 2023 \n6:00 PM - 8:00 PM"}
+					</Text>
+					<Text 
+						style={{
+							color: "#6E7787",
+							fontSize: 14,
+							marginBottom: 12,
+							width: 261,
+						}}>
+						{"We'll be meeting up at our usual location\nCome along and enjoy planning with us!"}
+					</Text>
+					<Text 
+						style={{
+							color: "#6E7787",
+							fontSize: 14,
+							marginBottom: 11,
+							width: 157,
+						}}>
+						{"PLNT Vancouver\n340-1220 Bidwell Street"}
+					</Text>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#927AF4",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 5,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 11,
+								width: 27,
+							}}>
+							{"RSVP"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 84,
+						}}>
+						{"Mar 11, 2023"}
+					</Text>
+					<Text 
+						style={{
+							color: "#565E6C",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 107,
+						}}>
+						{"Earned 30 points"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 16,
+							marginHorizontal: 20,
+						}}>
+						{"Planning the next get-together and having lunch with Disney coworkers."}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 82,
+						}}>
+						{"Feb 25, 2023"}
+					</Text>
+					<Text 
+						style={{
+							color: "#565E6C",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 107,
+						}}>
+						{"Earned 30 points"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 16,
+							marginLeft: 20,
+							width: 218,
+						}}>
+						{"Lunch with coworkers in Park City."}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 81,
+						}}>
+						{"Jan 22, 2023"}
+					</Text>
+					<Text 
+						style={{
+							color: "#565E6C",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 107,
+						}}>
+						{"Earned 30 points"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 16,
+							marginLeft: 20,
+							width: 277,
+						}}>
+						{"Udi's Market lunch and planning next meet."}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 75,
+						}}>
+						{"Dec 1, 2022"}
+					</Text>
+					<Text 
+						style={{
+							color: "#565E6C",
+							fontSize: 14,
+							marginBottom: 4,
+							marginLeft: 20,
+							width: 107,
+						}}>
+						{"Earned 30 points"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							marginLeft: 20,
+							width: 265,
+						}}>
+						{"Meeting with Jen and Kelly at El Segundo."}
+					</Text>
+				</View>
+				<View 
+					style={{
+						alignItems: "center",
+						backgroundColor: "#FFFFFF",
+						padding: 20,
+					}}>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 20,
+							marginBottom: 12,
+						}}>
+						{"Progress Tracker"}
+					</Text>
+					<Text 
+						style={{
+							color: "#000000",
+							fontSize: 14,
+							textAlign: "center",
+							marginBottom: 12,
+							width: 230,
+						}}>
+						{"Total points earned: 880\nPoints required for next reward: 120 \n\n"}
+					</Text>
+					<Image
+						source = {{uri: "https://storage.googleapis.com/tagjs-prod.appspot.com/v1/iQMRFu4ZxA/iol2pqiy_expires_30_days.png"}} 
+						resizeMode = {"stretch"}
+						style={{
+							height: 196,
+						}}
+					/>
+				</View>
+				<View 
+					style={{
+						backgroundColor: "#FFFFFF",
+						paddingVertical: 20,
+						marginBottom: 1,
+					}}>
+					<TouchableOpacity 
+						style={{
+							alignItems: "center",
+							backgroundColor: "#927AF4",
+							borderColor: "#00000000",
+							borderRadius: 3,
+							borderWidth: 1,
+							paddingVertical: 12,
+							marginHorizontal: 20,
+						}} onPress={()=>alert('Pressed!')}>
+						<Text 
+							style={{
+								color: "#FFFFFF",
+								fontSize: 18,
+								width: 145,
+							}}>
+							{"Plan New Meetup"}
+						</Text>
+					</TouchableOpacity>
+				</View>
+			</ScrollView>
+		</SafeAreaView>
+	)
+}
